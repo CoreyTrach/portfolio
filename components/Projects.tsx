@@ -13,7 +13,7 @@ const Projects = (props: Props) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className='relative w-full flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory z-20s'>
+        className='relative w-full flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
         {projects.map((project, i) => {
           return (
             <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
@@ -44,9 +44,6 @@ const Projects = (props: Props) => {
             </div>
           );
         })}
-        {/* <project></project> */}
-        {/* <project></project> */}
-        {/* <project></project> */}
       </motion.div>
 
       <div className='w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12'></div>
